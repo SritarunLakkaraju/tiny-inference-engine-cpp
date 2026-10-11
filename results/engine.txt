@@ -1,0 +1,20 @@
+[conv = auto]
+  max |logit - pytorch| = 8.583e-06   argmax mismatches = 0 / 10000   accuracy = 98.66%
+  latency (batch 1, 1 thread): median 44.5 us, mean 44.6 us, p99 45.4 us
+  throughput (11 threads): 152058 images/s
+  per layer:  conv1 4.5 us  maxpool 1.5 us  conv2 28.6 us  maxpool 0.8 us  fc1 9.6 us  fc2 0.2 us
+[conv = direct]
+  max |logit - pytorch| = 7.629e-06   argmax mismatches = 0 / 10000   accuracy = 98.66%
+  latency (batch 1, 1 thread): median 152.0 us, mean 152.2 us, p99 156.0 us
+  throughput (11 threads): 42900 images/s
+  per layer:  conv1 4.2 us  maxpool 1.4 us  conv2 141.1 us  maxpool 0.7 us  fc1 9.2 us  fc2 0.2 us
+[conv = im2col_gemm]
+  max |logit - pytorch| = 7.629e-06   argmax mismatches = 0 / 10000   accuracy = 98.66%
+  latency (batch 1, 1 thread): median 69.8 us, mean 69.2 us, p99 71.2 us
+  throughput (11 threads): 99264 images/s
+  per layer:  conv1 11.8 us  maxpool 1.5 us  conv2 46.4 us  maxpool 0.8 us  fc1 9.5 us  fc2 0.2 us
+[conv = winograd]
+  max |logit - pytorch| = 7.629e-06   argmax mismatches = 0 / 10000   accuracy = 98.66%
+  latency (batch 1, 1 thread): median 52.8 us, mean 52.8 us, p99 53.8 us
+  throughput (11 threads): 128795 images/s
+  per layer:  conv1 12.4 us  maxpool 1.5 us  conv2 29.1 us  maxpool 0.8 us  fc1 9.7 us  fc2 0.2 us

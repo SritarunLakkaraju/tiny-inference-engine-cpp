@@ -1,0 +1,9 @@
+{
+  "images": 10000,
+  "configs": {
+    "auto": {"max_abs_diff": 8.5831e-06, "argmax_mismatch": 0, "accuracy": 0.9866, "latency_us_median": 44.54, "latency_us_mean": 44.58, "latency_us_p99": 45.38, "throughput_images_per_s": 152058, "threads": 11, "layers_us": {"0_conv1": 4.50, "1_maxpool": 1.52, "2_conv2": 28.65, "3_maxpool": 0.76, "5_fc1": 9.64, "6_fc2": 0.24}},
+    "direct": {"max_abs_diff": 7.6294e-06, "argmax_mismatch": 0, "accuracy": 0.9866, "latency_us_median": 152.00, "latency_us_mean": 152.19, "latency_us_p99": 155.96, "throughput_images_per_s": 42900, "threads": 11, "layers_us": {"0_conv1": 4.19, "1_maxpool": 1.43, "2_conv2": 141.11, "3_maxpool": 0.74, "5_fc1": 9.18, "6_fc2": 0.22}},
+    "im2col_gemm": {"max_abs_diff": 7.6294e-06, "argmax_mismatch": 0, "accuracy": 0.9866, "latency_us_median": 69.79, "latency_us_mean": 69.21, "latency_us_p99": 71.17, "throughput_images_per_s": 99264, "threads": 11, "layers_us": {"0_conv1": 11.82, "1_maxpool": 1.47, "2_conv2": 46.38, "3_maxpool": 0.75, "5_fc1": 9.51, "6_fc2": 0.23}},
+    "winograd": {"max_abs_diff": 7.6294e-06, "argmax_mismatch": 0, "accuracy": 0.9866, "latency_us_median": 52.79, "latency_us_mean": 52.81, "latency_us_p99": 53.79, "throughput_images_per_s": 128795, "threads": 11, "layers_us": {"0_conv1": 12.37, "1_maxpool": 1.49, "2_conv2": 29.15, "3_maxpool": 0.76, "5_fc1": 9.72, "6_fc2": 0.23}}
+  }
+}

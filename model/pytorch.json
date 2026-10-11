@@ -1,0 +1,9 @@
+{
+  "torch_version": "2.8.0",
+  "accuracy": 0.9865999817848206,
+  "latency_us_median": 107.33399999907078,
+  "latency_us_mean": 107.84521149994575,
+  "latency_us_p99": 117.00167000299189,
+  "batch10000_1thread_images_per_s": 16864.279710457606,
+  "parameters": 206922
+}
